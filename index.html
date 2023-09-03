@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Background Generator</h1>
+    </header>
+    <main>
+        <div class="color-pickers">
+            <div class="color-picker">
+                <label for="colorInput1">Choose Color 1:</label>
+                <input type="color" id="colorInput1">
+            </div>
+            <div class="color-picker">
+                <label for="colorInput2">Choose Color 2:</label>
+                <input type="color" id="colorInput2">
+            </div>
+        </div>
+        <div class="gradient-type">
+            <label>Gradient Type:</label>
+            <input type="radio" id="linearGradient" name="gradientType" value="linear" checked>
+            <label for="linearGradient">Linear</label>
+            <input type="radio" id="radialGradient" name="gradientType" value="radial">
+            <label for="radialGradient">Radial</label>
+            <input type="radio" id="bothGradient" name="gradientType" value="both">
+            <label for="bothGradient">Both</label>
+        </div>
+        <div class="controls">
+            <button id="generateButton">Generate</button>
+            <button id="copyButton">Copy Gradient</button>
+        </div>
+        <div class="color-display">
+            <p id="gradientCode">linear-gradient(to right, #ffffff, #ffffff)</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Background Generator</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
